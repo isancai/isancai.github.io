@@ -15,6 +15,11 @@
 			$('#webde').show(2000);
 			$('#bbbb').hide(5000);
 		});
+		function f5(){
+			d = new Date();
+			$('#jpgg').attr('src', 'https://iw233.cn/API/MirlKoi-iw233.php?'+d.getTime());
+		
+		}
 	</script>
 	<div class="container">
 		<div class="row clearfix">
@@ -33,8 +38,10 @@
 						<br><br><br><br><br><br><br><br>
 					</div>
 						
-					<img src="https://iw233.cn/API/MirlKoi-iw233.php" class="img-responsive center-block"/>
-
+					<img id="jpgg" src="https://iw233.cn/API/MirlKoi-iw233.php" class="img-responsive center-block"/>
+					
+					<button type="button" onclick="f5()" class="btn btn-lg btn-primary">刷张图像</button>
+						
 					<div class="col-md-2 column"></div>
 					
 					<p>
